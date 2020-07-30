@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SilentEcho-Plugin")]
+[assembly: AssemblyTitle("Webhook_Logger")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Evitonative")]
-[assembly: AssemblyProduct("SilentEcho-Plugin")]
+[assembly: AssemblyProduct("Webhook_Logger")]
 [assembly: AssemblyCopyright("Copyright © Evitonative 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

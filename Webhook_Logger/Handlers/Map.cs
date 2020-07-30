@@ -15,8 +15,8 @@ namespace Webhook_Logger.Handlers
         {
             if (Plugin.Instance.Config.AnnouncingDecontamination == "") return;
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[" + Plugin.Instance.Config.server_name + "] " + Plugin.Instance.Config.AnnouncingDecontamination);
-            Plugin.sendWebHook(Plugin.Instance.Config.map_url, Plugin.Instance.Config.AnnouncingDecontamination, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[" + Plugin.Instance.Config.map_name + "] " + Plugin.Instance.Config.AnnouncingDecontamination);
+            Plugin.sendWebHook(Plugin.Instance.Config.map_url, Plugin.Instance.Config.AnnouncingDecontamination, Plugin.Instance.Config.map_name);
         }
 
         internal void AnnouncingNtfEntrance(AnnouncingNtfEntranceEventArgs ev)
@@ -28,8 +28,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.map_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.map_name);
         }
 
         internal void AnnouncingScpTermination(AnnouncingScpTerminationEventArgs ev)
@@ -41,16 +41,16 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.map_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.map_name);
         }
 
         internal void Decontaminating(DecontaminatingEventArgs ev)
         {
             if (Plugin.Instance.Config.Decontaminating == "") return;
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[" + Plugin.Instance.Config.server_name + "] " + Plugin.Instance.Config.Decontaminating);
-            Plugin.sendWebHook(Plugin.Instance.Config.map_url, Plugin.Instance.Config.Decontaminating, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[" + Plugin.Instance.Config.map_name + "] " + Plugin.Instance.Config.Decontaminating);
+            Plugin.sendWebHook(Plugin.Instance.Config.map_url, Plugin.Instance.Config.Decontaminating, Plugin.Instance.Config.map_name);
         }
 
         internal void ExplodingGrenade(ExplodingGrenadeEventArgs ev)
@@ -62,8 +62,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.map_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.map_name);
         }
 
         internal void GeneratorActivated(GeneratorActivatedEventArgs ev)
@@ -73,8 +73,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.map_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.map_url, message, Plugin.Instance.Config.map_name);
         }
     }
 }

@@ -20,39 +20,35 @@ namespace Webhook_Logger
         public string localisation { get; set; } = "de-DE";
 
         [Description("Webhook for Map Events")]
-        public string map_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string map_url { get; set; } = "";
         public string map_name { get; set; } = "Map Logger";
 
         [Description("Webhook for Player Events")]
-        public string player_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string player_url { get; set; } = "";
         public string player_name { get; set; } = "Player Logger";
 
-        [Description("Webhook for Round Events")]
-        public string round_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
-        public string round_name { get; set; } = "Round Logger";
-
         [Description("Webhook for Scp106 Events")]
-        public string scp049_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string scp049_url { get; set; } = "";
         public string scp049_name { get; set; } = "Scp049 Logger";
 
         [Description("Webhook for Scp106 Events")]
-        public string scp079_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string scp079_url { get; set; } = "";
         public string scp079_name { get; set; } = "Scp079 Logger";
 
         [Description("Webhook for Scp106 Events")]
-        public string scp096_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string scp096_url { get; set; } = "";
         public string scp096_name { get; set; } = "Scp096 Logger";
 
         [Description("Webhook for Scp106 Events")]
-        public string scp106_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string scp106_url { get; set; } = "";
         public string scp106_name { get; set; } = "Scp106 Logger";
 
         [Description("Webhook for Scp914 Events")]
-        public string scp914_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string scp914_url { get; set; } = "r";
         public string scp914_name { get; set; } = "Scp914 Logger";
 
         [Description("Webhook for Server Events")]
-        public string server_url { get; set; } = "https://ptb.discordapp.com/api/webhooks/737970157502070785/HJMeOa-cGyGlKAlHOduJMmELV0XPvE4xnFyMi6SQeqW_fBLMMrACB1LjO5IQMKBfw9Rr";
+        public string server_url { get; set; } = "";
         public string server_name { get; set; } = "Server Logger";
 
         [Description("Webhook for Warhead Events")]

@@ -17,8 +17,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp106_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp106_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp106_url, message, Plugin.Instance.Config.scp106_name);
         }
 
         internal void CreatingPortal(CreatingPortalEventArgs ev)
@@ -28,8 +28,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp106_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp106_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp106_url, message, Plugin.Instance.Config.scp106_name);
         }
 
         internal void Teleporting(TeleportingEventArgs ev)
@@ -39,8 +39,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp106_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp106_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp106_url, message, Plugin.Instance.Config.scp106_name);
         }
     }
 }

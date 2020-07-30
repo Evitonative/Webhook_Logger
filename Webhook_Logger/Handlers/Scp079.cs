@@ -20,8 +20,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp079_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.scp079_name);
         }
 
         internal void GainingLevel(GainingLevelEventArgs ev)
@@ -35,8 +35,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp079_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.scp079_name);
         }
 
         internal void InteractingDoor(InteractingDoorEventArgs ev)
@@ -50,8 +50,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp079_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.scp079_name);
         }
 
         internal void InteractingTesla(InteractingTeslaEventArgs ev)
@@ -65,8 +65,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp079_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp079_url, message, Plugin.Instance.Config.scp079_name);
         }
     }
 }

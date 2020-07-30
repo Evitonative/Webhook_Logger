@@ -13,8 +13,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Kicked(KickedEventArgs ev)
@@ -25,8 +25,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Banned(BannedEventArgs ev)
@@ -39,8 +39,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void MedicalItemUsed(UsedMedicalItemEventArgs ev)
@@ -51,8 +51,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void StoppingMedicalItem(StoppingMedicalItemEventArgs ev)
@@ -63,8 +63,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         /*internal void Interacted(InteractedEventArgs ev)
@@ -84,8 +84,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Joined(JoinedEventArgs ev)
@@ -96,8 +96,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Left(LeftEventArgs ev)
@@ -109,8 +109,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Hurting(HurtingEventArgs ev)
@@ -121,8 +121,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Died(DiedEventArgs ev)
@@ -133,8 +133,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void ChangingRole(ChangingRoleEventArgs ev)
@@ -145,8 +145,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void ThrowingGrenade(ThrowingGrenadeEventArgs ev)
@@ -156,8 +156,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void DroppingItem(DroppingItemEventArgs ev)
@@ -167,8 +167,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void PickingUpItem(PickingUpItemEventArgs ev)
@@ -178,8 +178,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Handcuffing(HandcuffingEventArgs ev)
@@ -190,8 +190,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void RemovingHandcuffs(RemovingHandcuffsEventArgs ev)
@@ -202,8 +202,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Escaping(EscapingEventArgs ev)
@@ -214,8 +214,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void IntercomSpeaking(IntercomSpeakingEventArgs ev)
@@ -225,8 +225,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Shot(ShotEventArgs ev)
@@ -236,8 +236,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void EnteringPocketDimension(EnteringPocketDimensionEventArgs ev)
@@ -247,8 +247,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void EscapingPocketDimension(EscapingPocketDimensionEventArgs ev)
@@ -258,8 +258,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void FailingEscapePocketDimension(FailingEscapePocketDimensionEventArgs ev)
@@ -269,8 +269,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void ReloadingWeapon(ReloadingWeaponEventArgs ev)
@@ -280,8 +280,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void Spawning(SpawningEventArgs ev)
@@ -292,8 +292,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void EnteringFemurBreaker(EnteringFemurBreakerEventArgs ev)
@@ -303,8 +303,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         /*internal void SyncingData(SyncingDataEventArgs ev)
@@ -319,8 +319,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void InteractingLocker(InteractingLockerEventArgs ev)
@@ -330,8 +330,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void UnlockingGenerator(UnlockingGeneratorEventArgs ev)
@@ -341,8 +341,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void ClosingGenerator(ClosingGeneratorEventArgs ev)
@@ -352,8 +352,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
 
         }
 
@@ -364,8 +364,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void InsertingGeneratorTablet(InsertingGeneratorTabletEventArgs ev)
@@ -375,8 +375,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void OpeningGenerator(OpeningGeneratorEventArgs ev)
@@ -386,8 +386,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void TriggeringTesla(TriggeringTeslaEventArgs ev)
@@ -397,8 +397,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         internal void InteractingElevator(InteractingElevatorEventArgs ev)
@@ -408,8 +408,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
 
         /*internal void ChangingGroup(ChangingGroupEventArgs ev)
@@ -425,8 +425,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.player_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.player_url, message, Plugin.Instance.Config.player_name);
         }
     }
 }

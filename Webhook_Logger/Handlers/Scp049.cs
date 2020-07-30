@@ -20,8 +20,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp049_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp049_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp049_url, message, Plugin.Instance.Config.scp049_name);
         }
 
         internal void FinishingRecall(FinishingRecallEventArgs ev)
@@ -33,8 +33,8 @@ namespace Webhook_Logger.Handlers
             message = message.Replace("%targetteam%", ev.Target.Team.ToString());
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp049_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp049_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp049_url, message, Plugin.Instance.Config.scp049_name);
         }
     }
 }

@@ -17,8 +17,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp096_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp096_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp096_url, message, Plugin.Instance.Config.scp096_name);
         }
 
         internal void CalmingDown(CalmingDownEventArgs ev)
@@ -28,8 +28,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp096_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp096_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp096_url, message, Plugin.Instance.Config.scp096_name);
         }
     }
 }

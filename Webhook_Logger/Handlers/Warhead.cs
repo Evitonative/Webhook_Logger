@@ -17,8 +17,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.warhead_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.warhead_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.warhead_url, message, Plugin.Instance.Config.warhead_name);
         }
 
         internal void Detonated()
@@ -26,8 +26,8 @@ namespace Webhook_Logger.Handlers
             if (Plugin.Instance.Config.Detonated == "") return;
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[" + Plugin.Instance.Config.server_name + "] " + Plugin.Instance.Config.Detonated);
-            Plugin.sendWebHook(Plugin.Instance.Config.warhead_url, Plugin.Instance.Config.Detonated, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[" + Plugin.Instance.Config.warhead_name + "] " + Plugin.Instance.Config.Detonated);
+            Plugin.sendWebHook(Plugin.Instance.Config.warhead_url, Plugin.Instance.Config.Detonated, Plugin.Instance.Config.warhead_name);
         }
 
         internal void Starting(StartingEventArgs ev)
@@ -37,8 +37,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.warhead_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.warhead_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.warhead_url, message, Plugin.Instance.Config.warhead_name);
         }
     }
 }

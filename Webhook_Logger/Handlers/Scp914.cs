@@ -20,8 +20,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp914_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp914_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp914_url, message, Plugin.Instance.Config.scp914_name);
         }
 
         internal void Activating(ActivatingEventArgs ev)
@@ -31,8 +31,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp914_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp914_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp914_url, message, Plugin.Instance.Config.scp914_name);
         }
 
         internal void ChangingKnobSetting(ChangingKnobSettingEventArgs ev)
@@ -43,8 +43,8 @@ namespace Webhook_Logger.Handlers
 
 
             if (Plugin.Instance.Config.debug_to_console)
-                Log.Debug(message: "[ " + Plugin.Instance.Config.server_name + "] " + message);
-            Plugin.sendWebHook(Plugin.Instance.Config.scp914_url, message, Plugin.Instance.Config.server_name);
+                Log.Debug(message: "[ " + Plugin.Instance.Config.scp914_name + "] " + message);
+            Plugin.sendWebHook(Plugin.Instance.Config.scp914_url, message, Plugin.Instance.Config.scp914_name);
         }
     }
 }
